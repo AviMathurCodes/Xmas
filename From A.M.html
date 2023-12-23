@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./styles.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text">Who does Avi Mathur love most in this world?</h1>
+            </div>
+            <div class="gif_container">
+                <img src="https://media2.giphy.com/media/lkdH8FmImcGoylv3t3/200.webp?cid=ecf05e478n9ygy7d0rkoyyp8t4mqw8kaf3x05yr4c1xx4pxd&ep=v1_gifs_search&rid=200.webp&ct=g" alt="Easiest question ever">
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()">Bhavya💙</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">Others❓</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "To B.S.html";
+                    }
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth);
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight);
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>
